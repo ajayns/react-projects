@@ -1,4 +1,53 @@
 body {
-    font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 20px;
+    font: 14px Segoe, sans-serif;
+    margin: 0 auto;
+	background: #212121;
+	color: white;
 }
+
+.container {
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+}
+
+.input, .output {
+	width: 50%;
+	padding: 2em;
+	box-sizing: border-box;
+}
+
+.input-text {
+	min-height: 400px;
+	border: 2px solid #464646;
+	background: transparent;
+	color: white;
+	transition: border 0.3s;
+}
+
+.input-text, .output-text {
+	width: 100%;
+	box-sizing: border-box;
+	min-height: 400px;
+	border-radius: 4px;
+	padding: 1em;
+}
+
+.output-text {
+	background: #464646;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	hyphens: auto;
+}
+
+.input-text:focus {
+	border: 2px solid grey;
+}
+
+h3 {
+	font-weight: normal;
+}
+
+
+
+
