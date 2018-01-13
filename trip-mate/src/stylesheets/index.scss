@@ -1,0 +1,188 @@
+@mixin flex($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: center;
+}
+
+%hoverlink {
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+    &:hover {
+        color: white;
+    }
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-image: url("../assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 0;    
+}
+
+h1, h3 {
+    display: inline;
+    font-weight: normal;
+    color: white;
+}
+
+h1 {
+    font-size: 96px;
+}
+
+h3 {
+    font-size: 48px;
+}
+
+.route-container {
+    display: flex;
+
+    .nav {
+        height: 100vh;
+        width: 64px;
+        @include flex(column);        
+
+        a {
+            @extend %hoverlink;
+            font-size: 28px;
+            padding-bottom: 1em;            
+        }
+    }
+
+    .trips-count {
+        flex: auto;
+        color: rgb(240, 240, 240);
+        @include flex();
+
+        .content {
+            width: 60%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-areas:
+                'total total total'
+                'tropic trek club'
+                'goal goal goal';
+            grid-row-gap: 5em;
+            text-align: center;
+
+            .total {
+                grid-area: total;
+            }
+
+            .tropic {
+                grid-area: tropic;
+            }
+
+            .trek {
+                grid-area: trek;
+            }
+
+            .club {
+                grid-area: club;
+            }
+
+            .tropic, .trek, .club {
+                font-size: 24px;
+            }
+
+            .goal {
+                grid-area: goal;
+                display: flex;
+                align-items: center;
+                margin: 0 auto;
+                width: 320px;
+
+                .progress {
+                    height: 0.5em;
+                    margin: 0.5em;
+                    background-color: rgb(240, 240, 240);
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    .form-container {
+        flex: auto;
+        @include flex();
+        
+        .form {
+            @include flex(column);
+            color: white;
+
+            label {
+                width: 320px;
+            }
+
+            input[type=text], input[type=date],
+            select {
+                width: 320px;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 3px solid lightgrey;
+                color: white;
+                background: transparent;
+                box-sizing: border-box;
+
+                &:focus {
+                    border-color: white;
+                }
+            }
+
+            input[type=submit] {
+                border: 3px solid lightgrey;
+                background: transparent;
+                color: white;
+                padding: 14px 20px;
+                margin: 2em 0;
+                cursor: pointer;
+                align-self: right;
+            }
+
+            input[type=submit]:hover {
+                border-color: white;
+                background-color: white;
+                color: grey;
+            }
+        }
+    }
+
+    .trips-list {
+        flex: auto;
+        @include flex(column);
+        color: white;
+        font-size: 20px;
+
+        h3 {
+            margin-top: 0;
+        }
+
+        .table {
+            width: 400px;
+            text-align: left;
+
+            th {
+                border-bottom: 2px solid lightgrey;
+            }
+        }
+
+        .filters {
+            font-size: 14px;
+            margin-top: 2em;
+            a {
+                @extend %hoverlink;
+                margin: 0.5em;
+            }
+        }
+    }
+
+    .no-page {
+        @include flex();
+        color: white;
+        font-size: 40px;
+    }
+
+}

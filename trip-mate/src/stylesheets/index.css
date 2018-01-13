@@ -1,0 +1,138 @@
+.route-container .nav a, .route-container .trips-list .filters a {
+  text-decoration: none;
+  color: #f0f0f0; }
+  .route-container .nav a:hover, .route-container .trips-list .filters a:hover {
+    color: white; }
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-image: url("../assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 0; }
+
+h1, h3 {
+  display: inline;
+  font-weight: normal;
+  color: white; }
+
+h1 {
+  font-size: 96px; }
+
+h3 {
+  font-size: 48px; }
+
+.route-container {
+  display: flex; }
+  .route-container .nav {
+    height: 100vh;
+    width: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .route-container .nav a {
+      font-size: 28px;
+      padding-bottom: 1em; }
+  .route-container .trips-count {
+    flex: auto;
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    .route-container .trips-count .content {
+      width: 60%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-areas: 'total total total' 'tropic trek club' 'goal goal goal';
+      grid-row-gap: 5em;
+      text-align: center; }
+      .route-container .trips-count .content .total {
+        grid-area: total; }
+      .route-container .trips-count .content .tropic {
+        grid-area: tropic; }
+      .route-container .trips-count .content .trek {
+        grid-area: trek; }
+      .route-container .trips-count .content .club {
+        grid-area: club; }
+      .route-container .trips-count .content .tropic, .route-container .trips-count .content .trek, .route-container .trips-count .content .club {
+        font-size: 24px; }
+      .route-container .trips-count .content .goal {
+        grid-area: goal;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        width: 320px; }
+        .route-container .trips-count .content .goal .progress {
+          height: 0.5em;
+          margin: 0.5em;
+          background-color: #f0f0f0;
+          display: inline-block; }
+  .route-container .form-container {
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    .route-container .form-container .form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white; }
+      .route-container .form-container .form label {
+        width: 320px; }
+      .route-container .form-container .form input[type=text], .route-container .form-container .form input[type=date],
+      .route-container .form-container .form select {
+        width: 320px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 3px solid lightgrey;
+        color: white;
+        background: transparent;
+        box-sizing: border-box; }
+        .route-container .form-container .form input[type=text]:focus, .route-container .form-container .form input[type=date]:focus,
+        .route-container .form-container .form select:focus {
+          border-color: white; }
+      .route-container .form-container .form input[type=submit] {
+        border: 3px solid lightgrey;
+        background: transparent;
+        color: white;
+        padding: 14px 20px;
+        margin: 2em 0;
+        cursor: pointer;
+        align-self: right; }
+      .route-container .form-container .form input[type=submit]:hover {
+        border-color: white;
+        background-color: white;
+        color: grey; }
+  .route-container .trips-list {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px; }
+    .route-container .trips-list h3 {
+      margin-top: 0; }
+    .route-container .trips-list .table {
+      width: 400px;
+      text-align: left; }
+      .route-container .trips-list .table th {
+        border-bottom: 2px solid lightgrey; }
+    .route-container .trips-list .filters {
+      font-size: 14px;
+      margin-top: 2em; }
+      .route-container .trips-list .filters a {
+        margin: 0.5em; }
+  .route-container .no-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 40px; }

@@ -14,9 +14,19 @@ export class App extends React.Component {
         this.state = {
             allTrips: [
                 {
-                    place: "Munnar",
-                    date: "01-01-2018",
+                    place: "Manali",
+                    date: "2017-01-01",
                     type: "Trek"
+                },
+                {
+                    place: "Mumbai",
+                    date: "2017-04-05",
+                    type: "Club"
+                },
+                {
+                    place: "Marina",
+                    date: "2017-02-09",
+                    type: "Tropic"
                 }
             ]
         }
@@ -44,7 +54,8 @@ export class App extends React.Component {
         return (
             <div className="app">                
                 <Router>
-                    <div>
+                    <div className="route-container">
+                        <Nav />
                         <Switch>
                             <Route exact path="/" render={(props) => (
                                 <TripsCount
@@ -76,7 +87,6 @@ export class App extends React.Component {
                             )} />
                             <Route component={Error404} />
                         </Switch>
-                    <Nav />
                     </div>                    
                 </Router>                
             </div>
