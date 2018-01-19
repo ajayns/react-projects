@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 
+// Get state from store to props
 const mapStateToProps = state => {
     return { articles: state.articles};
 };
@@ -16,6 +17,7 @@ const ConnectedList = ({articles}) => (
     </ul>
 );
 
+// Wire it up together, check types and export
 const List = connect(mapStateToProps)(ConnectedList);
 
 ConnectedList.propTypes = {

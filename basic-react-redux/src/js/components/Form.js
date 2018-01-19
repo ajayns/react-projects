@@ -4,12 +4,14 @@ import uuidv1 from "uuid";
 import PropTypes from "prop-types";
 import { addArticle } from "../actions/index";
 
+// Dispatch action to add to store
 const mapDispatchToProps = dispatch => {
     return {
         addArticle: article => dispatch(addArticle(article))
     };
 };
 
+// Form component
 class ConnectedForm extends Component {
     constructor() {
         super();
@@ -63,8 +65,10 @@ class ConnectedForm extends Component {
     }
 }
 
+// Wire it up together and export
 const Form = connect(null, mapDispatchToProps)(ConnectedForm);
 
+// Check var types using propTypes
 ConnectedForm.propTypes = {
     addArticle: PropTypes.func.isRequired
 };

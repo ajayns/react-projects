@@ -9,7 +9,7 @@ import ItemList from './components/ItemList';
 // Init store
 const store = configureStore();
 
-// provider to use redux store in app
+// Provider to use redux store in app
 render(
     <Provider store={store}>
         <ItemList />
