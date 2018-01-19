@@ -11,17 +11,18 @@ A couple of projects to get familiar with the React framework.
 2. **tictactoe**: A tic-tac-toe game uses states and props.
 3. **markdown-editor**: A real-time markdown editor SPA. [(Live Demo)](https://react-markdown-editor.firebaseapp.com)
 4. **basic-react-redux**: Basic react-redux project which handles articles in its store.
-5. **book-store [WIP]**: Online book store built over react-redux and Bootstrap for UI.
-6. **trip-mate**: Manage and keep track of your trips with this simple, smooth webapp. Uses react-router, custom styling. [(Live Demo)](https://react-trip-mate.firebaseapp.com)
+5. **basic-redux-thunk**: Basic react-redux-thunk project which handles items from an API using thunk, uses redux for store.
+6. **book-store [WIP]**: Online book store built over react-redux and Bootstrap for UI.
+7. **trip-mate**: Manage and keep track of your trips with this simple, smooth webapp. Uses react-router, custom styling. [(Live Demo)](https://react-trip-mate.firebaseapp.com)
 
 ## Development
 
-Projects such as create-react-app and react-slingshot have been used to setup development envs.
+Projects such as _create-react-app_, _nwb_ and _react-slingshot_ have been used to setup development envs.
 
 Install all dependencies using yarn
 
 ```bash
-yarn install
+yarn
 ```
 Start the development server
 
@@ -29,6 +30,11 @@ Start the development server
 yarn start
 ```
 
+## Tutorials/References
+https://reactjs.org/tutorial/tutorial.html
+https://egghead.io/courses/the-beginner-s-guide-to-reactjs
+https://www.valentinog.com/blog/react-redux-tutorial-beginners/
+https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3
 
 ## Contributing
 
