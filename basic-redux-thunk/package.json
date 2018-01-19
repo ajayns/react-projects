@@ -1,0 +1,27 @@
+{
+  "name": "dummys-guide-to-redux-and-thunk-react",
+  "version": "1.0.0",
+  "description": "A Dummy's Guide to Redux and Thunk in React",
+  "private": true,
+  "scripts": {
+    "build": "nwb build-react-app",
+    "clean": "nwb clean-app",
+    "start": "nwb serve-react-app"
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.5",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.0",
+    "eslint": "^3.10.0",
+    "eslint-plugin-react": "^6.6.0",
+    "nwb": "0.12.x"
+  },
+  "author": "",
+  "license": "MIT",
+  "repository": ""
+}
