@@ -32,9 +32,13 @@ yarn start
 
 ## Tutorials/References
 https://reactjs.org/tutorial/tutorial.html
+
 https://egghead.io/courses/the-beginner-s-guide-to-reactjs
+
 https://www.valentinog.com/blog/react-redux-tutorial-beginners/
+
 https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3
+
 
 ## Contributing
 
