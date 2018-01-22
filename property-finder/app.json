@@ -1,0 +1,7 @@
+{
+  "name": "PropertyFinder",
+  "displayName": "PropertyFinder",
+  "expo": {
+    "sdkVersion": "23.0.0"
+  }
+}

@@ -14,6 +14,8 @@ A couple of projects to get familiar with the React framework.
 5. **basic-redux-thunk**: Basic react-redux-thunk project which handles items from an API using thunk, uses redux for store.
 6. **book-store [WIP]**: Online book store built over react-redux and Bootstrap for UI.
 7. **trip-mate**: Manage and keep track of your trips with this simple, smooth webapp. Uses react-router, custom styling. [(Live Demo)](https://react-trip-mate.firebaseapp.com)
+8. **property-finder [WIP]**: Search for and list properties. Built on React-Native, uses react-navigation.
+
 
 ## Development
 
@@ -38,6 +40,8 @@ https://egghead.io/courses/the-beginner-s-guide-to-reactjs
 https://www.valentinog.com/blog/react-redux-tutorial-beginners/
 
 https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3
+
+https://www.raywenderlich.com/178012/react-native-tutorial-building-android-apps-javascript
 
 
 ## Contributing
