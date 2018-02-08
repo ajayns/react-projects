@@ -14,25 +14,25 @@ A couple of projects to get familiar with the React framework.
 5. **basic-redux-thunk**: Basic react-redux-thunk project which handles items from an API using thunk, uses redux for store.
 6. **book-store [WIP]**: Online book store built over react-redux and Bootstrap for UI.
 7. **trip-mate**: Manage and keep track of your trips with this simple, smooth webapp. Uses react-router, custom styling. [(Live Demo)](https://react-trip-mate.firebaseapp.com)
-8. **property-finder [WIP]**: Search for and list properties. Built on React-Native, uses react-navigation.
+8. **property-finder**: Search for and list properties. Built on React-Native, uses react-navigation.
+9. **todo-pwa [WIP]**: The classic Todos Tracker as a Progressive Web App. Built using React, Redux, leveraging styled-components, PaperCSS, Service Worker tools.
 
 
 ## Development
 
 Projects such as _create-react-app_, _nwb_ and _react-slingshot_ have been used to setup development envs.
 
-Install all dependencies using yarn
+Install all the required packages/dependencies using yarn
 
-```bash
-yarn
-```
-Start the development server
+### `yarn`
 
-```bash
-yarn start
-```
+Serve the app to browser
+
+### `yarn start`
+
 
 ## Tutorials/References
+
 https://reactjs.org/tutorial/tutorial.html
 
 https://egghead.io/courses/the-beginner-s-guide-to-reactjs
@@ -43,6 +43,7 @@ https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a70
 
 https://www.raywenderlich.com/178012/react-native-tutorial-building-android-apps-javascript
 
+https://medium.com/@rajaraodv/step-by-step-guide-to-building-react-redux-apps-using-mocks-48ca0f47f9a
 
 ## Contributing
 

@@ -1,0 +1,21 @@
+{
+  "name": "paper-todo",
+  "version": "0.2.0",
+  "private": true,
+  "dependencies": {
+    "papercss": "^1.4.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-scripts": "1.1.0",
+    "redux": "^3.7.2",
+    "styled-components": "^3.1.6",
+    "uuid": "^3.2.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
