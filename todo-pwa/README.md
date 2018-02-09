@@ -1,9 +1,8 @@
 # PaperTodo
 
-![Giphy]()
-![Giphy]()
+![Giphy](https://media.giphy.com/media/26DNeo2xDmfj3plbW/giphy.gif)
 
-[Live Demo]()
+[Live Demo](https://paper-todo.firebaseapp.com)
 
 The classic Todos Tracker as a Progressive Web App. Built using React, Redux, leveraging styled-components, PaperCSS, Service Worker tools.
 
@@ -12,9 +11,8 @@ The classic Todos Tracker as a Progressive Web App. Built using React, Redux, le
 * Cross-browser, cross-platform support
 * Installable web app
 * Offline functionality
-* Sleek, simple UI
+* Fancy yet simple UI
 * Lightweight
-* Fully responsive
 
 ## Development
 
@@ -29,6 +27,7 @@ Serve the app to browser
 ## Checklist
 
 - [ ] Use localstorage to store todos
+- [ ] Improve app responsiveness on all devices
 
 ## Contributing
 

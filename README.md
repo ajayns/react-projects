@@ -4,6 +4,7 @@ A couple of projects to get familiar with the React framework.
 
 ![Giphy](https://media.giphy.com/media/l0HUhhAtb86vYAHkY/giphy.gif)
 ![Giphy](https://media.giphy.com/media/26gN147Cy7zF1Mv7y/giphy.gif)
+![Giphy](https://media.giphy.com/media/26DNeo2xDmfj3plbW/giphy.gif)
 
 
 ## Projects
@@ -15,7 +16,7 @@ A couple of projects to get familiar with the React framework.
 6. **book-store [WIP]**: Online book store built over react-redux and Bootstrap for UI.
 7. **trip-mate**: Manage and keep track of your trips with this simple, smooth webapp. Uses react-router, custom styling. [(Live Demo)](https://react-trip-mate.firebaseapp.com)
 8. **property-finder**: Search for and list properties. Built on React-Native, uses react-navigation.
-9. **todo-pwa [WIP]**: The classic Todos Tracker as a Progressive Web App. Built using React, Redux, leveraging styled-components, PaperCSS, Service Worker tools.
+9. **todo-pwa**: The classic Todos Tracker as a Progressive Web App. Built using React, Redux, leveraging styled-components, PaperCSS, Service Worker tools. [(Live Demo)](https://paper-todo.firebaseapp.com)
 
 
 ## Development
