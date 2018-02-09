@@ -4,13 +4,13 @@
 
 [Live Demo](https://paper-todo.firebaseapp.com)
 
-The classic Todos Tracker as a Progressive Web App. Built using React, Redux, leveraging styled-components, PaperCSS, Service Worker tools.
+The classic Todos Tracker as a Progressive Web App. Built using React, Redux, leveraging styled-components, PaperCSS, Service Worker tools. Data is retained using localStorage.
 
 ## Features
 
 * Cross-browser, cross-platform support
 * Installable web app
-* Offline functionality
+* Offline functionality with local storage
 * Fancy yet simple UI
 * Lightweight
 
@@ -26,7 +26,7 @@ Serve the app to browser
 
 ## Checklist
 
-- [ ] Use localstorage to store todos
+- [x] Use localstorage to store todos
 - [ ] Improve app responsiveness on all devices
 
 ## Contributing

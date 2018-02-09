@@ -33,11 +33,20 @@ const List = styled.ul`
 `;
 
 const TodoList = ({todos, filter}) => {
-    if(todos.length === 0 && filter === FILTER_ALL) 
-        return <div className="row flex-center margin-top-large">Chill scenes.</div>
+    let message;
+    if(todos.length === 0) {
+        let text;
+        switch(filter) {
+            case FILTER_COMPLETED: text = 'Nothing completed yet.'; break;
+            case FILTER_ACTIVE: text = 'Nothing to be completed.'; break;
+            default: text = 'Chill scenes.'; break;
+        }
+        message = (<div className="row flex-center margin-top-large">{text}</div>);
+    }       
 
     return (
         <div>
+            {message}
             <List className="child-borders">
                 {todos.map(todo =>
                     <Todo
@@ -47,7 +56,7 @@ const TodoList = ({todos, filter}) => {
                     />
                 )}
             </List>
-            <Filter/>
+            <Filter todosLength={todos.length} filter={filter}/>
         </div>        
     );
 }
