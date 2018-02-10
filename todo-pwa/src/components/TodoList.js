@@ -6,6 +6,7 @@ import Todo from './Todo';
 import Filter from './Filter';
 import { FILTER_ALL, FILTER_COMPLETED, FILTER_ACTIVE } from '../constants/filters';
 
+// Filter todos based on selected filter
 const filteredTodos = (todos, filter) => {
     switch(filter) {
         case FILTER_ALL:
@@ -19,6 +20,7 @@ const filteredTodos = (todos, filter) => {
     }
 }
 
+// Get todos from state
 const mapStateToProps = (state) => {
     return {
         todos: filteredTodos(state.todos, state.filter),
@@ -32,7 +34,10 @@ const List = styled.ul`
     padding-left: 0
 `;
 
+// Component to display todolist, also wraps Filter component
 const TodoList = ({todos, filter}) => {
+    
+    // Display message if no todos
     let message;
     if(todos.length === 0) {
         let text;

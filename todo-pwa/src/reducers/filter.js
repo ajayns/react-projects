@@ -1,3 +1,5 @@
+// Check localStorage for saved filter state, else init with FILTER_ALL
+
 import { SET_FILTER } from '../constants/action-types';
 import { FILTER_ALL } from '../constants/filters';
 

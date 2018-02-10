@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import { toggleTodo } from '../actions';
 
+// Toggle todo completed state
 const mapDispatchToProps = (dispatch) => {
     return {
         onItemClick: (id) => dispatch(toggleTodo(id))
@@ -19,6 +20,7 @@ const Item = styled.li`
     }
 `;
 
+// Individual Todo component, depending on state of completion, styles are applied
 const Todo = ({id, text, completed, onItemClick}) => {
     return (
         <Item 

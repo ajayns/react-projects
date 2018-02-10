@@ -1,5 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
+
+// UUID is a library for generating a unique id
 import uuidv1 from "uuid";
 
 import { addTodo } from '../actions';
@@ -10,6 +12,7 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
+// Form component for adding new todo, dispatches addTodo with a todo object
 const AddTodo = ({onSubmit}) => {
     let input;
 

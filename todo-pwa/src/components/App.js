@@ -15,6 +15,7 @@ const Paper = styled.div`
   background-color: white;
 `;
 
+// Main app structure
 class App extends Component {
   render() {
     return (

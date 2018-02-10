@@ -1,10 +1,9 @@
-// Reducer functions take state from Redux and action objects and returns a new state
-// Each action is defined as a case
-
 import { ADD_TODO, TOGGLE_TODO, CLEAR_TODOS } from '../constants/action-types';
 
+// Check localStorage for saved Todos, else return null array
 const storedTodos = JSON.parse(localStorage.getItem('todos')) || [];
 
+// Each action as a switch case, to perform different actions to state
 const todos = (state = storedTodos, action) => {
     switch (action.type) {
         case ADD_TODO:
