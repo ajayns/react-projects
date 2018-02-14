@@ -17,6 +17,7 @@ A couple of projects to get familiar with the React framework.
 7. **trip-mate**: Manage and keep track of your trips with this simple, smooth webapp. Uses react-router, custom styling. [(Live Demo)](https://react-trip-mate.firebaseapp.com)
 8. **property-finder**: Search for and list properties. Built on React-Native, uses react-navigation.
 9. **todo-pwa**: The classic Todos Tracker as a Progressive Web App. Built using React, Redux, leveraging styled-components, PaperCSS, Service Worker tools. Data is retained using localStorage [(Live Demo)](https://paper-todo.firebaseapp.com)
+10. **gatsbyjs-markdown-blog**: GatsbyJS blog which fetches markdown blog posts, lists them and displays each post wrapped up as a static site. Based on the tutorials in the official docs, uses GraphQL, Typography.js, Remark plugin, Glamor.
 
 
 ## Development
@@ -45,6 +46,9 @@ https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a70
 https://www.raywenderlich.com/178012/react-native-tutorial-building-android-apps-javascript
 
 https://medium.com/@rajaraodv/step-by-step-guide-to-building-react-redux-apps-using-mocks-48ca0f47f9a
+
+https://www.gatsbyjs.org/tutorial/part-four/
+
 
 ## Contributing
 

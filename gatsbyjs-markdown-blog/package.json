@@ -1,0 +1,21 @@
+{
+  "name": "gatsbyjs-markdown-blog",
+  "description": "Gatsby blog made referring to tutorial 4 from the Official site.",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "start": "gatsby develop"
+  },
+  "dependencies": {
+    "gatsby": "^1.9.158",
+    "gatsby-link": "^1.6.34",
+    "gatsby-plugin-glamor": "^1.6.12",
+    "gatsby-plugin-typography": "^1.7.14",
+    "gatsby-source-filesystem": "^1.5.19",
+    "gatsby-transformer-remark": "^1.7.32",
+    "glamorous": "^4.11.4",
+    "typography-theme-kirkham": "^0.16.3"
+  }
+}
