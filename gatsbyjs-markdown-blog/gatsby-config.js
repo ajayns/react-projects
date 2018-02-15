@@ -1,3 +1,7 @@
+// Configure plugins used
+// gatsby-source-filesystem is pointed to /src to look for files
+// typography.js is configured using /utils/typography
+
 module.exports = {
     siteMetadata: {
         title: `Pandas Eating Lots`,
