@@ -21,14 +21,14 @@ export const invalidateSubreddit = (subreddit) => (
     }
 )
 
-export const requestPosts = (subreddit) => (
+const requestPosts = (subreddit) => (
     {
         type: REQUEST_POSTS,
         subreddit
     }
 )
 
-export const recievePosts = (subreddit, json) => (
+const recievePosts = (subreddit, json) => (
     {
         type: RECEIVE_POSTS,
         subreddit,
@@ -37,7 +37,7 @@ export const recievePosts = (subreddit, json) => (
     }
 )
 
-export const fetchPosts = (subreddit) => {
+const fetchPosts = (subreddit) => {
     return (dispatch) => {
         dispatch(requestPosts(subreddit))
 
@@ -49,5 +49,24 @@ export const fetchPosts = (subreddit) => {
             .then(
                 json => dispatch(recievePosts(subreddit, json))
             )
+    }
+}
+
+const shouldFetchPosts = (state, subreddit) => {
+    const posts = state.postsBySubreddit[subreddit]
+    if (!posts) {
+        return true
+    } else if (posts.isFetching) {
+        return false        
+    } else {
+        return posts.didInvalidate
+    }
+}
+
+export const fetchPostsIfNeeded = (subreddit) => {
+    return (dispatch, getState) => {
+        if (shouldFetchPosts(getState(), subreddit)) {
+            return dispatch(fetchPosts(subreddit))
+        }
     }
 }
