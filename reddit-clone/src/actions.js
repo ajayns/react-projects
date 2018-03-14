@@ -3,7 +3,7 @@ import {
     INVALIDATE_SUBREDDIT, 
     REQUEST_POSTS, 
     RECEIVE_POSTS 
-} from `./constants.js`
+} from './constants'
 
 import fetch from 'cross-fetch'
 

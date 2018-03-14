@@ -3,7 +3,7 @@ import {
     INVALIDATE_SUBREDDIT,
     REQUEST_POSTS,
     RECEIVE_POSTS
-} from `./constants.js`
+} from './constants'
 
 import { combineReducers } from 'redux'
 
@@ -58,6 +58,8 @@ const postsBySubreddit = (
             return Object.assign({}, state, {
                 [action.subreddit]: posts(state[action.subreddit], action)
             })
+        default:
+            return state
     }
 }
 

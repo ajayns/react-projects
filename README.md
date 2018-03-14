@@ -18,6 +18,7 @@ A couple of projects to get familiar with the React framework.
 8. **property-finder**: Search for and list properties. Built on React-Native, uses react-navigation.
 9. **todo-pwa**: The classic Todos Tracker as a Progressive Web App. Built using React, Redux, leveraging styled-components, PaperCSS, Service Worker tools. Data is retained using localStorage [(Live Demo)](https://paper-todo.firebaseapp.com)
 10. **gatsbyjs-markdown-blog**: GatsbyJS blog which fetches markdown blog posts, lists them and displays each post wrapped up as a static site. Based on the tutorials in the official docs, uses GraphQL, Typography.js, Remark plugin, Glamor.
+11. **reddit-clone**: react-redux-thunk project that calls the RedditAPI to fetch posts from selected subreddits.
 
 
 ## Development
@@ -49,6 +50,7 @@ https://medium.com/@rajaraodv/step-by-step-guide-to-building-react-redux-apps-us
 
 https://www.gatsbyjs.org/tutorial/part-four/
 
+https://redux.js.org/advanced/example-reddit-api
 
 ## Contributing
 
