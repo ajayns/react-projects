@@ -7,6 +7,7 @@ import {
 
 import { combineReducers } from 'redux'
 
+// Reducer handling the currently selected subreddit
 const selectedSubreddit = (state = 'reactjs', action) => {
     switch (action.type) {
         case SELECT_SUBREDDIT:
@@ -16,6 +17,7 @@ const selectedSubreddit = (state = 'reactjs', action) => {
     }
 }
 
+// Helper function for handling posts
 const posts = (
     state = {
         isFetching: false,
@@ -26,27 +28,28 @@ const posts = (
 ) => {
     switch (action.type) {
         case INVALIDATE_SUBREDDIT:
-            return Object.assign({}, state, {
+            return { ...state, 
                 didInvalidate: true
-            })
+            }
         case REQUEST_POSTS:
-            return Object.assign({}, state, {
+            return { ...state, 
                 isFetching: true,
                 didInvalidate: false
-            })
+            }
         case RECEIVE_POSTS:
-            return Object.assign({}, state, {
+            return { ...state, 
                 isFetching: false,
                 didInvalidate: false,
                 items: action.posts,
                 lastUpdated: action.receivedAt
-            })
+            }
         default:
             return state
 
     }
 }
 
+// Reducer handling posts by subreddit
 const postsBySubreddit = (
     state = {},
     action
@@ -55,14 +58,15 @@ const postsBySubreddit = (
         case INVALIDATE_SUBREDDIT:
         case RECEIVE_POSTS:
         case REQUEST_POSTS:
-            return Object.assign({}, state, {
+            return { ...state,
                 [action.subreddit]: posts(state[action.subreddit], action)
-            })
+            }
         default:
             return state
     }
 }
 
+// Combine reducers
 const rootReducer = combineReducers({
     postsBySubreddit,
     selectedSubreddit

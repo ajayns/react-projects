@@ -5,7 +5,11 @@ import {
     RECEIVE_POSTS 
 } from './constants'
 
+// Import fetch API in case of browser compatiblity issues
 import fetch from 'cross-fetch'
+
+// Action creators for all functionality
+// Basically wraps up type and subreddit selected into an object
 
 export const selectSubreddit = (subreddit) => (
     {
@@ -37,10 +41,14 @@ const recievePosts = (subreddit, json) => (
     }
 )
 
+// Helper function to fetch JSON data from Reddit API
 const fetchPosts = (subreddit) => {
     return (dispatch) => {
+        // Dispatch requestPosts action just before attempting to fetching data
         dispatch(requestPosts(subreddit))
 
+        // Fetch data and dispatch recievePosts if no errors
+        // Catch shouldn't be used to handle errors as 
         return fetch(`https://www.reddit.com/r/${subreddit}.json`)
             .then(
                 response => response.json(),
@@ -53,7 +61,11 @@ const fetchPosts = (subreddit) => {
 }
 
 const shouldFetchPosts = (state, subreddit) => {
+    // Get posts by subreddit from state
     const posts = state.postsBySubreddit[subreddit]
+
+    // Should fetch posts if no posts exists and not fetching already
+    // If posts exists and not fetching then depends on if posts have invalidated
     if (!posts) {
         return true
     } else if (posts.isFetching) {

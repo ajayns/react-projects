@@ -2,11 +2,14 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
+// Import actions
 import {
     selectSubreddit,
     fetchPostsIfNeeded,
     invalidateSubreddit
 } from '../actions'
+
+// Import components
 import Picker from '../components/Picker'
 import Posts from '../components/Posts'
 
@@ -55,19 +58,22 @@ class AsyncApp extends Component {
                     {lastUpdated &&
                         <span>
                             Last updated at {new Date(lastUpdated).toLocaleTimeString()}.
-              {' '}
-                        </span>}
+                            {' '}
+                        </span>
+                    }
                     {!isFetching &&
                         <a href="#" onClick={this.handleRefreshClick}>
                             Refresh
-            </a>}
+                        </a>
+                    }
                 </p>
                 {isFetching && posts.length === 0 && <h2>Loading...</h2>}
                 {!isFetching && posts.length === 0 && <h2>Empty.</h2>}
                 {posts.length > 0 &&
                     <div style={{ opacity: isFetching ? 0.5 : 1 }}>
                         <Posts posts={posts} />
-                    </div>}
+                    </div>
+                }
             </div>
         )
     }
