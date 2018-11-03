@@ -20,6 +20,7 @@ class Todo extends React.Component {
                 <TodoList items={this.state.items}/>
                 <form onSubmit={this.handleSubmit}>
                     <input
+                        type="text"
                         onChange={this.handleChange}
                         value={this.state.text}
                     />
@@ -38,7 +39,7 @@ class Todo extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         if(!this.state.text.length) {
-            return;
+            return console.log("empty");
         }
         const newItem = {
             id: Date.now(),

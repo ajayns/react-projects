@@ -1,4 +1,43 @@
 body {
     font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 20px;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    background: #9b59b6;
+    padding-top: 10rem;
+}
+
+#root {
+	    background: #ecf0f1;
+	    padding: 0rem 4rem 4rem 4rem;
+	    margin-top: auto;
+	    position: relative;
+	    padding-top: 3rem;
+	    border-radius: 1rem;
+}
+
+input[type=text] {
+	padding: 0.5rem;
+}
+input[type=text]:focus {
+	border: 1px solid purple;
+}
+
+button {
+	padding: 0.6rem;
+	background: #8e44ad;
+	border: 0;
+	color: white;
+}
+body h3 {
+	font-size: 2rem;
+	padding: 0.5rem 1rem;
+	color: white;
+	width: 100%;
+	position: absolute;
+	top: -4rem;
+	left: -1rem;
+	border-radius: 0.7rem;
+	box-shadow: 4px 4px 5px #9b59b6;
+	background: purple;
 }
