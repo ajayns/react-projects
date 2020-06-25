@@ -19,7 +19,7 @@ A couple of projects to get familiar with the React framework.
 9. **todo-pwa**: The classic Todos Tracker as a Progressive Web App. Built using React, Redux, leveraging styled-components, PaperCSS, Service Worker tools. Data is retained using localStorage [(Live Demo)](https://paper-todo.firebaseapp.com)
 10. **gatsbyjs-markdown-blog**: GatsbyJS blog which fetches markdown blog posts, lists them and displays each post wrapped up as a static site. Based on the tutorials in the official docs, uses GraphQL, Typography.js, Remark plugin, Glamor.
 11. **reddit-clone**: react-redux-thunk project that calls the RedditAPI to fetch posts from selected subreddits. [(Live Demo)](https://github.com/ajayns/frontend-dev-talk)
-
+12. **covid-19_tracker**: A react based project, Tracking the impact of Covid-19 pandemic Worldwide. [(Live Demo)](https://covid19-response.netlify.app)
 
 ## Development
 
