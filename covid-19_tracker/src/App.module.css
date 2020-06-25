@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(250, 250,250);
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .row-header{
+    margin:0px auto;
+    padding:0px auto;
+  }
+  
+  .row-content {
+    margin:0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height:400px;
+  }
+  
+  .jumbotron {
+    padding:70px 30px 70px 30px;
+    margin:0px auto;
+    background: #9575CD ;
+    color:floralwhite;
+  }
+  
+  address{
+    font-size:80%;
+    margin:0px;
+    color:#0f0f0f;
+  }
+  .MuiTypography-colorTextSecondary {
+    color: white;
+
+  }

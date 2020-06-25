@@ -1,0 +1,8 @@
+.formControl {
+    width: 30%;
+    margin-bottom: 30px !important;
+    background-color: #060606;
+  }
+  svg.MuiSvgIcon-root.MuiNativeSelect-icon {
+    background-color: #3a3a3a;
+}

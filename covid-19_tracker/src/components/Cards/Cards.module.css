@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+  }
+  
+  .card {
+    margin: 0 2% !important;
+    text-decoration-color: white;
+  }
+  
+  .infected {
+    border-bottom: 10px solid #ff073a;
+  }
+  
+  .recovered{
+    border-bottom: 10px solid #007bff;
+  }
+  
+  .deaths{
+    border-bottom: 10px solid #28a745;
+  }
+  
+  @media only screen and (max-width: 770px) {
+    .card {
+      margin: 2% 0 !important;
+    }
+  }
+  element.style {
+    color: white;
+}

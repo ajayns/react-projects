@@ -1,0 +1,20 @@
+#arogya{
+    margin: auto;
+    width: 25%;
+    align-content: center;
+}
+#mac{
+    width: 20%;
+}
+#scan
+{
+    width: 30%;
+    height: 30%;
+}
+.body {
+    text-align: center;
+}
+.Arogya {
+    text-align: center;
+    background-color: #1f1d1d;
+}

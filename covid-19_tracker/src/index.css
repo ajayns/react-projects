@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #060606;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.navbar-dark {
+  background-color: #000000;
+}
+.App_container__s1YRn {
+  background-color: #0a0a0a;
+}
+.App_container__s1YRn {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -42px;
+}
+element.style {
+  background-color: #040404;
+}
+.MuiTypography-colorTextSecondary {
+  color: white;
+}
+.MuiNativeSelect-select:not([multiple]) option, .MuiNativeSelect-select:not([multiple]) optgroup {
+  background-color: #383838;
+}
+
+.MuiTypography-h5 {
+  color: white;
+}
+.MuiTypography-body2 {
+  color: white;
+}
+element.style {
+  background-color: #060606;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: rgb(255, 255, 255);
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: rgb(255, 255, 255);
+}
+.jumbotron {
+  background-color: #060606;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: white;
+}
+.MuiGrid-spacing-xs-3 > .MuiGrid-item {
+  padding: 12px;
+  background-color: #1f1f1f;
+}
+.MuiNativeSelect-select.MuiNativeSelect-select {
+  padding-right: 24px;
+  background-color: rgb(255, 255, 255);
+  color: white;
+}
+.MuiNativeSelect-select.MuiNativeSelect-select {
+  padding-right: 24px;
+  background-color: #191919;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #d8d8d8;
+}
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+  background-color: #151313;
+  color: #c3c3c3;
+}
+p.MuiTypography-root.MuiTypography-body1.MuiTypography-colorTextSecondary.MuiTypography-gutterBottom {
+  color: white;
+}
+p.MuiTypography-root.MuiTypography-body1.MuiTypography-colorTextSecondary {
+  color: white;
+}
+.MuiNativeSelect-icon {
+  top: calc(50% - 12px);
+  color: rgba(0, 0, 0, 0.54);
+  right: 0;
+  position: absolute;
+  pointer-events: none;
+  background-color: #313030;
+}
+.title {
+  text-align: center;
+}
+.list-unstyled{
+  text-align: center;
+}
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #cacaca;
+}
