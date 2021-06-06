@@ -22,6 +22,9 @@ const AddTodo = ({onSubmit}) => {
                 onSubmit={e => { 
                         e.preventDefault();
                         const id = uuidv1();
+                        if(input.value === ''){
+                            alert('Please enter a task')
+                        }
                         if(input.value.trim()) {
                             onSubmit({
                                 id,
