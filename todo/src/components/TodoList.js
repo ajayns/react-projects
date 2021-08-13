@@ -1,6 +1,6 @@
-import { memo } from "react";
+import * as React from "react";
 
-export const TodoList = memo(({ items }) => {
+export const TodoList = React.memo(({ items }) => {
   return (
     <ul>
       {items.map(item => (
