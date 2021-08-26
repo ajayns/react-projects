@@ -5,8 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
+  overflow: hidden;
+  background-color: black;
 }
 
 .ingredients{
-  position: absolute;
+  position: absolute
+  ;
 }

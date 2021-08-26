@@ -15,7 +15,7 @@
   
     animation: slideInDown; 
   animation-duration: 2s; 
-    background-size: 50rem;
+    background-size: 46rem;
     height: 98vh;
     width: 100rem;
     position: fixed;
@@ -111,7 +111,7 @@
 
 .ingredientsBlock{
     background-color: #f4b46c;
-    margin: 15vw 71vw;
+    margin: 15vw 61vw;
     display: table;
     max-width: 200px;
     width: 100%;
@@ -140,4 +140,18 @@
     cursor: pointer;
     display: table;
     width: 95px;
+}
+header{
+    background: black;
+    width: 100%;
+    height: 4vw;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    font-size: 3vw;
+}
+.pizzaIngredients{
+    position: fixed;
+    margin-top: 4vw;
 }

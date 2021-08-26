@@ -75,6 +75,7 @@ export default class pizza extends Component {
   render() {
     return (
       <>
+         <header> 🍕Pizza Maker🍕</header>
         <div className="pizzaIngredients">
           <div className="base"></div>
           {this.pizzaContent()}
@@ -121,21 +122,6 @@ export default class pizza extends Component {
             <button
               className="ingrBtn"
               onClick={() => this.addRemoveIngredient("remove", "cheese")}
-            >
-              Remove
-            </button>
-          </div>
-          <p>Sausage</p>
-          <div className="ingrBtns">
-            <button
-              className="ingrBtn"
-              onClick={() => this.addRemoveIngredient("add", "sausage")}
-            >
-              Add
-            </button>
-            <button
-              className="ingrBtn"
-              onClick={() => this.addRemoveIngredient("remove", "sausage")}
             >
               Remove
             </button>
