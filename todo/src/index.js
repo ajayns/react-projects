@@ -17,7 +17,7 @@ class Todo extends React.Component {
         return (
             <div>
                 <h3>TODO</h3>
-                <TodoList items={this.state.items}/>
+                <TodoList items={this.state.items} onclick={this.toggleCompleted.bind(this)} />
                 <form onSubmit={this.handleSubmit}>
                     <input
                         onChange={this.handleChange}
@@ -29,6 +29,18 @@ class Todo extends React.Component {
                 </form>
             </div>
         );
+    }
+
+    toggleCompleted(i) {
+        let updatedItems = this.state.items;
+        updatedItems.map(item => {
+            if (item.id === i.id)
+                item.completed = !item.completed;
+        })
+        console.log(updatedItems)
+        this.setState({
+            items: updatedItems
+        })
     }
 
     handleChange(e) {
@@ -43,6 +55,7 @@ class Todo extends React.Component {
         const newItem = {
             id: Date.now(),
             text: this.state.text,
+            completed: false
         }
         this.setState(prev => ({
             items: prev.items.concat(newItem),
@@ -56,7 +69,10 @@ class TodoList extends React.Component {
         return (
             <ul>
                 {this.props.items.map(item => (
-                    <li key={item.id}>{item.text}</li>
+                    <div key={item.id}>
+                        <input type="checkbox" onClick={() => this.props.onclick(item)} />
+                        <span className={item.completed ? 'completed' : 'not-completed'}>{item.text}</span>
+                    </div>
                 ))}
             </ul>
         )
