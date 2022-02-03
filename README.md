@@ -56,3 +56,21 @@ https://redux.js.org/advanced/example-reddit-api
 ## Contributing
 
 Feel free to open issues and pull requests!
+
+By following 6 simple basic steps :-
+
+1. Fork the project to your **GitHub account**.
+2. Copy the `URL` from Code.
+3. Open `cmd` / `git bash` or any terminal as per your convenience write the command given below.
+>git clone [Your URL] (shortcut key for paste `shift + insert`)
+4. Now go to the IDE / Text Editor for contribute to the project. (I suggest [VS-CODE](https://code.visualstudio.com/download) for better performance)
+5. Open terminal into your IDE / Text Editor and go to editing folder. 
+>cd *Your required folder*
+6. Final Steps, type `npm install` and run `npm start` into Terminal!
+
+After contribute to the project, send the pull request to Author.
+
+<br>
+<br>
+
+**NOTE** :- If you are new to **git** I suggest you to create the new branch and do changes into that branch after successfully changes to your folder / repo.  merge it to master branch or main branch, now send the `pull request`.
