@@ -21,6 +21,7 @@ A couple of projects to get familiar with the React framework.
 10. **gatsbyjs-markdown-blog**: GatsbyJS blog which fetches markdown blog posts, lists them and displays each post wrapped up as a static site. Based on the tutorials in the official docs, uses GraphQL, Typography.js, Remark plugin, Glamor.
 11. **reddit-clone**: react-redux-thunk project that calls the RedditAPI to fetch posts from selected subreddits. [(Live Demo)](https://github.com/ajayns/frontend-dev-talk)
 
+Anamika Pandey is my name
 
 ## Development
 
