@@ -29,7 +29,7 @@
   "author": "ajayns",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "3.3.7",
+    "bootstrap": "3.4.1",
     "object-assign": "4.1.0",
     "react": "15.3.2",
     "react-dom": "15.3.2",
