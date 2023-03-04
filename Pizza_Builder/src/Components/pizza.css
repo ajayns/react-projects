@@ -1,0 +1,157 @@
+.base{
+    background-image: url(../Images/PizzaBase.png);
+    background-size: 46rem;
+    height: 100vh;
+    width: 100rem;
+    display: table;
+    position: fixed;
+    background-repeat: no-repeat;
+}
+.cheese{
+   z-index: 0;
+    
+    background-image: url(../Images/BaseCheese.png);
+    width: 65rem;
+  
+    animation: slideInDown; 
+  animation-duration: 2s; 
+    background-size: 46rem;
+    height: 98vh;
+    width: 100rem;
+    position: fixed;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: -28vw;
+}
+
+.tomato {
+    z-index: 1;
+    
+    background-image: url(../Images/images.png);
+    width: 65rem;
+    animation: slideInDown; 
+    animation-duration: 2s; 
+   
+    background-size: 54rem;
+    height: 100vh;
+    width: 100rem;
+    position: fixed;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+   margin-left: -28vw;
+
+    margin-left: -28vw;
+}
+
+.mushroom {
+    z-index: 1;
+    margin: -3vw 0px 0 0vw;
+    /* width: 63rem; */
+    background-image: url(../Images/Mushroom.png); 
+    width: 65rem;
+  
+    animation: slideInDown; 
+  animation-duration: 2s; 
+    background-size: 54rem;
+    height: 100vh;
+    width: 100rem;
+    position: fixed;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+   margin-left: -28vw;
+}
+.olive {
+    
+    background-image: url(../Images/Olive.png);
+    width: 65rem;
+    z-index: 1;
+    /* animation: slideInDown; 
+  animation-duration: 2s;  */
+    background-size: 54rem;
+    height: 100vh;
+    width: 100rem;
+    position: fixed;
+    display: flex;
+    background-repeat: no-repeat; 
+    background-position: center;
+   margin-left: -28vw;
+}
+.greenpepper {
+    background-image: url(../Images/green-peppers.png);
+    width: 65rem;
+    z-index: 1;
+    animation: slideInDown; 
+    animation-duration: 2s; 
+    background-size: 54rem;
+    height: 100vh;
+    width: 100rem;
+    position: fixed;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+   margin-left: -28vw;
+}
+
+.sausage {
+    width: 82rem;
+    display: none;
+    /* z-index: 0; */
+    margin: -6vw;
+    background-image: url(../Images/sausage.png);
+    background-size: 300px;
+    height: 110px;
+    width: 100%;
+    display: table;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ingredientsBlock{
+    background-color: #f4b46c;
+    margin: 15vw 61vw;
+    display: table;
+    max-width: 200px;
+    width: 100%;
+    border-radius: 3px;
+    padding: 20px;
+    position: fixed;
+    text-align: center;
+}
+.ingredientsBlock p{
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.ingrBtns{
+    margin: 0 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.ingrBtn{
+    border: 0;
+    background-color: #c17116;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    display: table;
+    width: 95px;
+}
+header{
+    background: black;
+    width: 100%;
+    height: 4vw;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    font-size: 3vw;
+}
+.pizzaIngredients{
+    position: fixed;
+    margin-top: 4vw;
+}
