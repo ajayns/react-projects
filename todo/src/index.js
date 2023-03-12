@@ -1,72 +1,39 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import * as React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import { TodoList } from "./components/TodoList.js";
 
-class Todo extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            items: [],
-            text: ''
-        }
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+const Todo = () => {
+  const [items, setItems] = React.useState([]);
+  const [text, setText] = React.useState("");
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    if (!text.trim().length) {
+      return;
     }
 
-    render() {
-        return (
-            <div>
-                <h3>TODO</h3>
-                <TodoList items={this.state.items}/>
-                <form onSubmit={this.handleSubmit}>
-                    <input
-                        onChange={this.handleChange}
-                        value={this.state.text}
-                    />
-                    <button>
-                        Add #{this.state.items.length + 1}
-                    </button>
-                </form>
-            </div>
-        );
-    }
+    const newTodo = {
+      id: Date.now(),
+      text,
+    };
 
-    handleChange(e) {
-        this.setState({ text: e.target.value });
-    }
+    setItems(prevItem => [...prevItem, newTodo]);
+    setText("");
+  };
 
-    handleSubmit(e) {
-        e.preventDefault();
-        if(!this.state.text.length) {
-            return;
-        }
-        const newItem = {
-            id: Date.now(),
-            text: this.state.text,
-        }
-        this.setState(prev => ({
-            items: prev.items.concat(newItem),
-            text: ''
-        }));
-    }
-}
-
-class TodoList extends React.Component {
-    render() {
-        return (
-            <ul>
-                {this.props.items.map(item => (
-                    <li key={item.id}>{item.text}</li>
-                ))}
-            </ul>
-        )
-    }
-}
-
+  return (
+    <div>
+      <h3>TODO</h3>
+      <TodoList items={items} />
+      <form onSubmit={handleSubmit}>
+        <input onChange={e => setText(e.target.value)} value={text} />
+        <button>Add #{items.length + 1}</button>
+      </form>
+    </div>
+  );
+};
 
 // ========================================
 
-ReactDOM.render(
-    <Todo />,
-    document.getElementById('root')
-);
+ReactDOM.render(<Todo />, document.getElementById("root"));
