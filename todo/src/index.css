@@ -2,3 +2,12 @@ body {
     font: 14px "Century Gothic", Futura, sans-serif;
     margin: 20px;
 }
+
+.completed {
+    text-decoration: line-through;
+    color: #898989;
+}
+
+.not-completed {
+    text-decoration: none;
+}
