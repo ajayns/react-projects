@@ -8,7 +8,7 @@ A couple of projects to get familiar with the React framework.
 ![Giphy](https://media.giphy.com/media/26DNeo2xDmfj3plbW/giphy.gif)
 
 
-## Projects
+# Projects
 1. **todo**: Basic todo app to get started.
 2. **tictactoe**: A tic-tac-toe game uses states and props.
 3. **markdown-editor**: A real-time markdown editor SPA. [(Live Demo)](https://react-markdown-editor.firebaseapp.com)
@@ -24,7 +24,10 @@ A couple of projects to get familiar with the React framework.
 
 ## Development
 
+
 Projects such as _create-react-app_, _nwb_ and _react-slingshot_ have been used to setup development envs.
+
+AND
 
 Install all the required packages/dependencies using yarn
 
